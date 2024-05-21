@@ -16,41 +16,44 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--=============== AOS CSS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
         <title> My Portfolio </title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">Teobo</a>
+                <a href="#" class="nav__logo" data-aos="zoom-in">Teobo</a>
 
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
+                        <li class="nav__item" data-aos="zoom-in">
                             <a href="#home" class="nav__link active-link">
                                 <i class='bx bx-home-alt' ></i>
                             </a>
                         </li>
                         
-                        <li class="nav__item">
+                        <li class="nav__item" data-aos="zoom-in">
                             <a href="#about" class="nav__link">
                                 <i class='bx bx-user' ></i>
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" data-aos="zoom-in">
                             <a href="#skills" class="nav__link">
                                 <i class='bx bx-book' ></i>
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" data-aos="zoom-in">
                             <a href="#work" class="nav__link">
                                 <i class='bx bx-briefcase-alt-2' ></i>
                             </a>
                         </li>
 
-                        <li class="nav__item">
+                        <li class="nav__item" data-aos="zoom-in">
                             <a href="#contact" class="nav__link">
                                 <i class='bx bxs-contact' ></i>
                             </a>
@@ -59,7 +62,7 @@
                 </div>
 
                 <!-- Theme changing button -->
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                <i class='bx bx-moon change-theme' id="theme-button" data-aos="zoom-in"></i>
             </nav>
         </header>
 
@@ -108,34 +111,34 @@
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                <span class="section__subtitle">My Intro</span>
-                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle" data-aos="zoom-in-down">My Intro</span>
+                <h2 class="section__title" data-aos="zoom-in-down">About Me</h2>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/about1.jpg" alt="" class="about__img">
+                    <img src="assets/img/about1.jpg" alt="" class="about__img" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     
                     <div class="about__data">
                         <div class="about__info">
-                            <div class="about__box">
+                            <div class="about__box" data-aos="fade-right">
                                 <i class='bx bx-award about__icon' ></i>
                                 <h3 class="about__title">Experience</h3>
                                 <span class="about__subtitle">3 Years Working</span>
                             </div>
     
-                            <div class="about__box">
+                            <div class="about__box" data-aos="fade-up">
                                 <i class='bx bx-briefcase-alt about__icon' ></i>
                                 <h3 class="about__title">Completed</h3>
                                 <span class="about__subtitle">10 + Projects</span>
                             </div>
     
-                            <div class="about__box">
+                            <div class="about__box" data-aos="fade-left">
                                 <i class='bx bx-support about__icon' ></i>
                                 <h3 class="about__title">Support</h3>
                                 <span class="about__subtitle">Online 24/7</span>
                             </div>
                         </div>
 
-                        <p class="about__description">
+                        <p class="about__description" data-aos="zoom-in">
                             Frontend developer with extensive experience creating web pages and mobile apps. I have a proven track record of delivering high-quality projects that satisfy clients.
                         </p>
         
@@ -700,5 +703,16 @@
         <script src="assets/js/sendtelegram.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <!--=============== Animation JS ===============-->
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+                once: false, // whether animation should happen only once - while scrolling down
+            });
+        </script>
+
     </body>
 </html>
